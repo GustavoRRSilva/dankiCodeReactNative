@@ -13,6 +13,9 @@ const stylesExterno = StyleSheet.create({
       height: 60,
       width: "80%",
     },
+    green:{
+        backgroundColor:'green'
+    }
   });
 
   export default stylesExterno;
