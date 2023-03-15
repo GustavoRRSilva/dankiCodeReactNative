@@ -1,28 +1,17 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, ScrollView} from "react-native";
+import { StyleSheet, Text, View, ScrollView } from "react-native";
+import stylesExterno from "./styles";
 import React from "react";
 import { Header } from "./itens/header";
 
-
 export default function App() {
-    return (
-      <ScrollView style = {{marginTop:30,flex:1}}>
+  return (
+    <ScrollView>
+      <View style={stylesExterno.container}>
         <Header />
-        <Text>
-          Olá texto
-        </Text>
-      </ScrollView>
-    );
+        <View style={stylesExterno.red}></View>
+      </View>
+    </ScrollView>
+  );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    marginTop:30,
-    alignItems:'center'
-  },
-  header:{
-    textAlign: 'center',
-  }
-});
